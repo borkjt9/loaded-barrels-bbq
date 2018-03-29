@@ -4,7 +4,7 @@ import C2A from '../c2a/c2a';
 import Team from '../team/team';
 import Food from '../food/food';
 import './landing-page.scss';
-import OrderNow from '../order-now/order-now';
+import BookNow from '../book-now/book-now';
 
 class LandingPage extends Component {
   render() {
@@ -12,9 +12,9 @@ class LandingPage extends Component {
       <div className="landing-page">
         <Header />
         <C2A />
-        <Team />
+        <Team/>
         <Food />
-        <OrderNow />
+        <BookNow />
       </div>
     )
   }

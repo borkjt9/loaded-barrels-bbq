@@ -3,7 +3,7 @@ import React from 'react';
 import './team.scss';
 function Team() {
   return (
-    <div className="team component is-top" id="team">
+    <div className="team component is-top" id="the-team">
       <h1 className="component__title">THE TEAM</h1>
       <div className="component__body">
         <div className="component__double-section row-wrap">
