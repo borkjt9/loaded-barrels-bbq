@@ -3,9 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@sendgrid/mail": "^6.2.1",
     "autoprefixer": "7.1.6",
-    "aws-sdk": "^2.216.1",
     "axios": "^0.18.0",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
@@ -22,7 +20,6 @@
     "fs-extra": "3.0.1",
     "html-webpack-plugin": "2.29.0",
     "node-sass": "^4.8.3",
-    "nodemailer": "^4.6.3",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.8",
