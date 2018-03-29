@@ -1,0 +1,93 @@
+.header {
+  z-index: 2;
+  height: 90px;
+  position: fixed;
+  background: white;
+  width: 100%;
+  //border-bottom: 1px solid #d9d9d9;
+  box-shadow: 0 1.5px 3px #B3B3B3;
+  .header__home-link {
+    position: absolute;
+    left: 10%;
+    z-index: 11;
+    img {
+      height: 150px; //.61 of width
+    }
+  }
+
+  .header__home-link__border {
+    z-index: 9;
+    background: white;
+    //border: 1px solid #d9d9d9;
+    box-shadow: 0 3.5px 3px #B3B3B3;
+    border-radius: 50%;
+    left: 10%;
+    width: 245px; //logo width;
+    position: absolute;
+    bottom: 5px;
+    height: 208px;
+    top: -60px //.855 (height / width) - 150 (height of logo)
+  }
+
+  .header__section-wrapper {
+    width: 100%;
+    z-index: 10;
+    height: inherit;
+    position: absolute;
+    background-color: white;
+  }
+
+  .header__section-links {
+    background: white;
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    justify-content: space-around;
+    float: right;
+    .header__section-link {
+      transition: all 0.2s ease-in-out;
+      color: #636363;
+      cursor: pointer;
+      font-weight: 700;
+      :hover {
+        color: #991A00;
+      }
+    }
+
+    button {
+      max-width: 175px;
+      height: 40%;
+      margin-top: auto;
+      margin-bottom: auto;
+      text-decoration: none;
+    }
+    .header__c2a {
+      height: inherit;
+      text-decoration: none;
+      background-color: #ff0000;
+      border-radius: 8px;
+      border-bottom: 1px solid #d9d9d9;
+      box-shadow: 0 0 5px #d9d9d9;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+      width: inherit;
+      max-width: inherit;
+      transition: all 0.25s ease-in-out;
+      &:hover {
+        background-color: #990000;
+      }
+
+      h4 {
+        color: white;
+        font-weight: 700;
+        margin: 0.8em auto;
+        letter-spacing: .2em;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+}

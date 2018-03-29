@@ -1,0 +1,32 @@
+.order-now {
+  width: 80%;
+  margin: 40px auto;
+  form {
+    text-align: left;
+    max-width: 800px;
+    width: 40%;
+    .order-now__form__text {
+      margin: 10px 0px auto;
+    }
+
+
+    input {
+      margin: 10px auto;
+      height: 30px;
+      border-radius: 4px;
+      border: 1px solid #B3B3B3;
+
+      width: 100%;
+
+      &.is-message {
+
+        height: 200px;
+      }
+    }
+  };
+
+  .order-now__form__submit {
+    margin: 10px auto;
+    float: left;
+  }
+};

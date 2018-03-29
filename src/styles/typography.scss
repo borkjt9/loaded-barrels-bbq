@@ -1,0 +1,165 @@
+h1, h2, h3, h4, h5, a, button, p {
+  font-family: 'Lato', sans-serif;
+  font-variant-ligatures: no-common-ligatures;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-weight: 400;
+  color: #721400;
+}
+
+h2 {
+  font-weight: 700;
+  color: #721400;
+
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  line-height: 28px;
+  color: #595959;
+}
+
+h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-indent: .2em;
+  font-size: 1rem;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  color: #3D3D3D;
+}
+
+h5 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1rem;
+  color: #3D3D3D;
+}
+
+
+
+p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  white-space: pre-wrap;
+  letter-spacing: 2px;
+  color: #333333;
+  line-height: 1.5em;
+}
+
+a {
+
+}
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 767px) {
+  h1, h2, h3, h4, h5, a {
+    white-space: normal;
+
+  }
+}
+@media  (max-width: 767px) {
+  h1, h2, h3, h4, h5, a, p {
+    text-align: center;
+
+  }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 481px) {
+  h1 {
+    font-size: 2.8rem;
+    letter-spacing: .2em;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: #990000;
+    text-indent: .1em;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+    line-height: 1.2em;
+    letter-spacing: .08em;
+    text-indent: .1em;
+    color: #990000;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  h1, h2, h3, h4, h5, a, p {
+    text-align: center;
+  }
+  h3 {
+    text-indent: 3px;
+  }
+  h1 {
+    font-size: 3.0rem;
+    letter-spacing: .5em;
+    white-space: normal;
+    line-height: 1.3em;
+
+
+  }
+  h2 {
+    font-size: 3.0rem;
+    letter-spacing: .5em;
+    white-space: normal;
+    text-indent: .5em;
+
+  }
+
+}
