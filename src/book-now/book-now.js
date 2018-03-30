@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './book-now.scss';
+import MapContainer from './google-maps/google-api';
+import GoogleMapWrapper from './google-map/google-map';
 import TextView from './Util/TextView.js';
 import { run, ruleRunner } from './Validation/ruleRunner.js'
-import { required, mustMatch, minLength } from './Validation/rules.js';
+import { required, mustMatch, minLength, validEmail } from './Validation/rules.js';
 import $ from 'jquery';
 
 const fieldValidations = [
   ruleRunner("name", "Name", required),
-  ruleRunner("email", "Email Address", required),
+  ruleRunner("email", "Email Address", required, validEmail),
   ruleRunner("date", "Date", required),
 ];
 
@@ -28,10 +30,12 @@ class BookNowForm extends Component {
   }
 
   componentWillMount() {
-  // Run validations on initial state
-  this.setState({validationErrors: run(this.state, fieldValidations)});
-}
+    // Run validations on initial state
+    this.setState({validationErrors: run(this.state, fieldValidations)});
+  }
+
   formattedDate = '';
+
   formatDate(rawDate) {
     if (rawDate.length < 3) {
       return rawDate
@@ -41,6 +45,7 @@ class BookNowForm extends Component {
       return rawDate.substring(0,2) + '/' + rawDate.substring(2,4) + '/' + rawDate.substring(4)
     }
   }
+
   onChange(field) {
     return (val) => {
       const state = this.state;
@@ -100,7 +105,6 @@ class BookNowForm extends Component {
     const { name, email, date, message } = this.state;
     const messagePlaceholder = "I am hosting a signing party for my newest work and I am in a bind for food!!! I can’t find good bbq in the North. I need your help!!!!";
     return (
-      <div>
         <div className="book-now__form">
           <h5 className="book-now__form__text">NAME</h5>
           <TextView placeholder="Tom Jefferson" type="text" showError={this.state.showErrors}
@@ -111,24 +115,48 @@ class BookNowForm extends Component {
                 text={this.state.email} onChange={this.onChange('email')}
                 errorText={this.errorFor("email")} />
           <h5 className="book-now__form__text">DATE</h5>
-          <TextView placeholder="MM/DD/YYYY" type="text" showError={this.state.showErrors}
+          <TextView placeholder="08/02/1776" type="text" showError={this.state.showErrors}
                 text={this.formattedDate} onChange={this.onChange('date')}
                 errorText={this.errorFor("date")} />
           <h5 className="book-now__form__text">MESSAGE</h5>
           <textarea className="is-message" placeholder={messagePlaceholder} showError={this.state.showErrors}
                 text={this.state.message} onChange={this.onChange('message')} />
+          <button className="book-now__form__submit" onClick={this.handleSubmit}><h4>SUBMIT</h4></button>
+
         </div>
-        <button className="book-now__form__submit" onClick={this.handleSubmit}><h4>SUBMIT</h4></button>
-      </div>
     )
   }
 };
 
 function BookNow() {
+  const bookDesc = 'Loaded Barrels BBQ caters to corporate and private events in the tri-state area.';
   return (
     <div className="book-now component" id="book-now">
       <h1 className="component__title">BOOK NOW</h1>
-      <BookNowForm />
+      <div className="component__single-section component__body">
+        <div className="inline-block">
+          <p className="component__single-section__text">{bookDesc} <a className="link" href="https://google.com">Click here to view a sample menu.</a></p>
+        </div>
+          <div className="component__double-section">
+            <BookNowForm />
+            <div className="contact">
+              <GoogleMapWrapper />
+              <div class="information-form">
+                <div class="information-form__section">
+                  <img className="information-form__section__img is-phone" src={require("../assets/phone-icon.svg")} />
+                  <span className="information-form__text">+1 (908) 328-4261</span>
+                  <p className="information-form__subtext">Mon-Fri 8:30am - 8:00pm ET</p>
+                  <p className="information-form__subtext">Sat-Sun 11:30am - 6:00pm ET</p>
+                </div>
+                <div class="information-form__section">
+                  <img className="information-form__section__img is-mail" src={require("../assets/mail-icon.svg")} />
+                  <span className="information-form__text">hello@loadedbarrelsbbq.com</span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
     </div>
   )
 }

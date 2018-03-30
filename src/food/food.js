@@ -10,7 +10,7 @@ function Food() {
       <h1 className="component__title">
         THE FOOD
       </h1>
-      <div className="component__single-section">
+      <div className="component__single-section combonent__body">
         <p className="component__single-section__text">{foodDesc}</p>
         <div className="component__single-section__img-group">
           <img className="component__single-section__img-group__img" src={require('../assets/food-mosaic.jpg')}/>

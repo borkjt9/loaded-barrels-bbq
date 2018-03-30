@@ -8,6 +8,15 @@ body {
 
 a {
   text-decoration: none;
+
+  &.link {
+    font-weight: 400;
+    color: #B60000;
+
+    &:hover {
+      color: #990000;
+    }
+  }
 }
 
 button {

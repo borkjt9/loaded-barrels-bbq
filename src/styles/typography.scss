@@ -1,5 +1,11 @@
-h1, h2, h3, h4, h5, a, button, p {
+h1, h2  {
   font-family: 'Lato', sans-serif;
+  font-variant-ligatures: no-common-ligatures;
+  text-rendering: optimizeLegibility;
+}
+
+ h3, h4, h5, a, button, p {
+  font-family: 'Nunito', sans-serif;
   font-variant-ligatures: no-common-ligatures;
   text-rendering: optimizeLegibility;
 }
@@ -17,14 +23,13 @@ h2 {
 
 h3 {
   font-size: 1.6rem;
-  font-weight: 300;
-  letter-spacing: 3px;
+  font-weight: 400;
+  letter-spacing: .1em;
   line-height: 28px;
   color: #595959;
 }
 
 h4 {
-  font-family: "Lato", sans-serif;
   font-weight: 700;
   letter-spacing: .2em;
   text-indent: .2em;
@@ -48,9 +53,9 @@ p {
   font-size: 1.2rem;
   font-weight: 400;
   white-space: pre-wrap;
-  letter-spacing: 2px;
-  color: #333333;
-  line-height: 1.5em;
+  letter-spacing: .1em;
+  color: #3D3D3D;
+  line-height: 1.6em;
 }
 
 input, text, span {
@@ -58,7 +63,7 @@ input, text, span {
   font-weight: 300;
   white-space: pre-wrap;
   letter-spacing: .1em;
-  color: #333333;
+  color: #3D3D3D;
   line-height: 1.5em;
   padding: .2em 1em
 }

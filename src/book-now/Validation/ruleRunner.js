@@ -4,6 +4,8 @@ export const ruleRunner = (field, name, ...validations) => {
     for (let v  of validations) {
       let errorMessageFunc = v(state[field], state);
       if (errorMessageFunc) {
+        console.log(field)
+        console.log('error message', errorMessageFunc)
         return {[field]: errorMessageFunc(name)};
       }
     }

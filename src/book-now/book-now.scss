@@ -1,10 +1,10 @@
 .book-now {
-  width: 80%;
   margin: 40px auto;
+
   .book-now__form {
     text-align: left;
     max-width: 800px;
-    width: 50%;
+    width: 30vw;
     .book-now__form__text {
       margin: 10px 0px auto;
     }
@@ -23,7 +23,7 @@
 
       &.is-message {
 
-        height: 200px;
+        height: 100px;
       }
     }
   };
@@ -33,3 +33,45 @@
     float: left;
   }
 };
+.contact {
+  margin: auto 0px;
+
+  .information-form {
+    .information-form__section {
+      text-align: left;
+      margin: 20px auto;
+
+      .information-form__section__img {
+        vertical-align: middle;
+        &.is-mail {
+          width: 30px
+        }
+        &.is-phone {
+          width: 20px;
+          margin-left: 5px;
+        }
+      }
+    }
+    .information-form__text {
+      text-align: left;
+      padding: 0px;
+      margin-left: 20px;
+      color: #3D3D3D;
+      font-weight: 300;
+      vertical-align: middle;
+      font-size: 1.2rem;
+      letter-spacing: .08em;
+      line-height: 1em
+
+    }
+
+    .information-form__subtext {
+      margin: 10px auto 10px 50px;
+      text-align: left;
+      font-size: .8rem;
+      letter-spacing: .05em;
+      font-weight: 400;
+      line-height: 1em;
+    }
+  }
+}

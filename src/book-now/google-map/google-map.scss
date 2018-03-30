@@ -1,0 +1,10 @@
+.google-map-wrapper {
+  width: 25vw;
+  height: 20vw;
+  margin: auto 0px;
+  .google-map {
+    margin: inherit;
+    width: 100%;
+    height: 100%;
+  }
+}

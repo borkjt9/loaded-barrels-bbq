@@ -10,8 +10,9 @@
     margin: 40px auto;
   }
   .component__body {
-    width: 90%;
-    margin: auto;
+    width: 95%;
+    max-width: 1400px;
+    margin: 40px auto;
   }
   .component__double-section {
     margin: 20px auto;
@@ -55,6 +56,8 @@
     .component__single-section__text {
       width: 100%;
       margin: auto;
+      font-size: 1rem;
+      font-weight: 300;
     }
 
     .component__single-section__img-group {
