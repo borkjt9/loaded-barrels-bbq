@@ -179,7 +179,7 @@ class BookNowForm extends Component {
 
 
 function BookNow() {
-  const bookDesc = 'Loaded Barrels BBQ caters to corporate and private events in the tri-state area.';
+  const bookDesc = 'Loaded Barrels BBQ caters to corporate and private events in the tri-state area. ';
   return (
     <div className="book-now component" id="book-now">
       <h1 className="component__title">BOOK NOW</h1>
@@ -193,7 +193,7 @@ function BookNow() {
               target="blank"
               rel="noopener noreferrer"
               href="/menu">
-              Click here to view a sample menu.
+               Click here to view a sample menu.
             </a>
           </p>
         </div>

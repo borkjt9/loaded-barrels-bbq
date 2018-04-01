@@ -1,0 +1,27 @@
+.footer {
+  background-color: #F2F2F2;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+  .mediaLinks {
+    text-align: center;
+
+    img {
+      width: 35px;
+      height: 35px;
+      margin: auto 5%;
+    }
+
+
+  }
+
+  .footer-text {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: .1em;
+    text-indent: .1em;
+    text-align: center;
+
+  }
+
+}

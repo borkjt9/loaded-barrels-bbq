@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../header/header';
+import Footer from '../footer/footer';
 import './menu.scss';
 const backgroundImg = require("../assets/landing-page-background.jpg");
 const menuImg = require("../assets/menu.png");
@@ -12,6 +13,7 @@ function Menu() {
     <div className="menu__body">
       <img className="menu__body__menu-img" src={menuImg} />
     </div>
+    <Footer />
     </div>
   )
 }

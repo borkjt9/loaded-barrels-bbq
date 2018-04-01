@@ -5,8 +5,7 @@ import './header.scss';
 const logo = require('../assets/logo.png');
 
 class Header extends Component {
-
-  render() {
+  renderWithHashLinks() {
     const animParamsTopSection = {offset: -90, duration: 400}
     const animParams = {offset: -130, duration: 400}
 
@@ -40,6 +39,17 @@ class Header extends Component {
       </div>
     )
   };
+
+  renderWithLinks() {
+
+  }
+  render() {
+    return (
+      <div>
+      {this.renderWithHashLinks()}
+      </div>
+    )
+  }
 
 }
 
