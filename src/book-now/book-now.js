@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import MapContainer from './google-maps/google-api';
 import GoogleMapWrapper from './google-map/google-map';
 import TextView from './Util/TextView.js';
 import { run, ruleRunner } from './Validation/ruleRunner.js'
@@ -148,7 +147,7 @@ class BookNowForm extends Component {
 
   render() {
     const { name, email, date, message } = this.state;
-    const messagePlaceholder = "I am hosting a signing party for my newest work and I am in a bind for food!!! I can’t find good bbq in the North. I need your help!!!!";
+    const messagePlaceholder = "I am hosting a signing party for my newest work and I am in a bind for food!!! I can’t find good BBQ in the North. I need your help!!!!";
     return (
         <div className="book-now__form">
 
@@ -186,7 +185,17 @@ function BookNow() {
       <h1 className="component__title">BOOK NOW</h1>
       <div className="component__single-section component__body">
         <div className="inline-block">
-          <p className="component__single-section__text">{bookDesc} <a className="link" href="https://google.com">Click here to view a sample menu.</a></p>
+          <p
+            className="component__single-section__text">
+            {bookDesc}
+            <a
+              className="link"
+              target="blank"
+              rel="noopener noreferrer"
+              href="/menu">
+              Click here to view a sample menu.
+            </a>
+          </p>
         </div>
           <div className="component__double-section">
             <BookNowForm />

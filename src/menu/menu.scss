@@ -1,0 +1,25 @@
+.menu {
+
+  .menu__body {
+    background: url("../assets/landing-page-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    margin-top: 90px;
+
+    // .menu__body__background-img {
+    //   position: relative;
+    //   z-index: -2;
+    //   width: 100%;
+    //   overflow: hidden;
+    // }
+
+    .menu__body__menu-img {
+      position: relative;
+      height: calc(80vh);
+      margin: auto;
+      display: block;
+      padding-top: 80px;
+      padding-bottom: 40px;
+    }
+  }
+}
