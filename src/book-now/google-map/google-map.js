@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */ //added this so that new google below doesn't throw error.
 import React , {Component} from 'react';
 import {compose, withProps} from 'recompose';
-import GoogleMapReact from 'google-map-react';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 import { InfoBox } from "react-google-maps/lib/components/addons/InfoBox";
 
@@ -25,7 +24,7 @@ const __GOOGLE_KEY__ = 'AIzaSyCUBXD3LEXPdDjzwYgLFU-W5U-KaotcX_0';
 
 const GoogleMapWrapper = compose(
   withProps({
-    googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places",
+    googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${__GOOGLE_KEY__}&v=3.exp&libraries=geometry,drawing,places`,
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div className="google-map-wrapper" />,
     mapElement: <div className="google-map" />,
