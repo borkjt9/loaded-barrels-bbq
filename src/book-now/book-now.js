@@ -7,6 +7,7 @@ import { required, mustMatch, minLength, validEmail } from './Validation/rules.j
 import $ from 'jquery';
 import swal from 'sweetalert2';
 import Spinner from 'react-spinkit';
+import RenderDoubleColComponent from '../shared/render-double-col-component';
 import './book-now.scss';
 
 const fieldValidations = [
@@ -197,7 +198,7 @@ function BookNow() {
             </a>
           </p>
         </div>
-          <div className="component__double-section">
+          <div className="component__double-col-section">
             <BookNowForm />
             <div className="contact">
               <GoogleMapWrapper />

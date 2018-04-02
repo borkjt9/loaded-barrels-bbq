@@ -14,35 +14,35 @@
     max-width: 1250px;
     margin: 40px auto;
   }
-  .component__double-section {
+  .component__double-col-section {
     margin: 20px auto;
     display: flex;
     justify-content: space-around;
     position: relative;
-    .component__double-section__img-group {
+    .component__double-col-section__img-group {
       width: 30vw;
       margin: auto;
 
-    .component__double-section__img-group__img{
+    .component__double-col-section__img-group__img{
       width: 100%
     }
 
-      .component__double-section__img-group__desc {
+      .component__double-col-section__img-group__desc {
         text-align: center;
         font-size: .8rem
       }
   }
 
-    .component__double-section__text {
+    .component__double-col-section__text-group {
       width: 30vw;
       margin: 0px auto;
       text-align: left;
 
-      .component__double-section__text__title {
+      .component__double-col-section__text-group__title {
 
       }
 
-      .component__double-section__text__desc {
+      .component__double-col-section__text-group__desc {
         width: inherit;
       }
     }
