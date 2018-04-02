@@ -9,4 +9,3 @@ export default class OptionallyDisplayed extends React.Component {
 OptionallyDisplayed.propTypes = {
   display: PropTypes.bool.isRequired
 };
-
