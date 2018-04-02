@@ -1,5 +1,9 @@
 .c2a{
-  height: calc(100vh - 90px); //90 is the height of the header
+  background-image: url("../assets/landing-page-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  height: calc(.5469 * 100vw);//.5469 is the height ratio of the bacgkround img //calc(100vh - 90px); //90 is the height of the header
+  position: relative;
   .c2a__background-img {
     position: absolute;
     top: 90px; //90 is the height of the header
@@ -13,11 +17,11 @@
     width: 30vw;
     height: 30vw;
     position: absolute;
-    bottom: 10vw;
-    right: 10vw;
     float: right;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 50%;
+    right: 15%;
+    bottom: 10%;
     .c2a__focus__title {
       margin: 5% auto;
     }

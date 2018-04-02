@@ -6,7 +6,7 @@ function Team() {
   const familyDesc = 'Loaded Barrels is first-and-foremost a family-run business. At events you will see Mike and his brother John working hand-in hand. While Mike mans the smoker John prepares the fixins.\n\nBBQ just seems to taste better when family is involved.';
   const competitionDesc = 'Loaded Barrels got its start on the Kansas City BBQ competition circuit, and continues to compete in a few competitions every year.\n\nThe competitions are a way for the team to relax and bond over some good BBQ, which is what it\'s all about.';
   return (
-    <div className="team component is-top" id="the-team">
+    <div className="team component" id="the-team">
       <h1 className="component__title">THE TEAM</h1>
       <div className="component__body">
         <div className="component__double-section row-wrap">

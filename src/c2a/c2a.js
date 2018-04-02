@@ -10,7 +10,6 @@ function C2A() {
 
   return (
     <div className="c2a">
-      <img className="c2a__background-img" src={backgroundImg} />
       <div className="c2a__focus vert-center">
         <div className="vert-center__child padding-hor-10">
           <h2 className="c2a__focus__title">Award-winning New Jersey BBQ</h2>
