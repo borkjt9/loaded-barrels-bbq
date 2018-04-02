@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Scrollchor from 'react-scrollchor';
 import './header.scss';
 
-const logo = require('../assets/logo.png');
+const logo = require('../../assets/logo.png');
 
 class Header extends Component {
   animParams = {offset: -130, duration: 400}

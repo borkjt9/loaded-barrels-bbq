@@ -9,13 +9,13 @@ class Footer extends Component {
         <div className="mediaLinks">
 
           <a className="mediaLink" target="_blank" href="https://twitter.com/LoadedBarrelsBBQ">
-            <img src={require("../assets/twitter-logo.png")}/>
+            <img src={require("../../assets/twitter-logo.png")}/>
           </a>
           <a className="mediaLink" target="_blank" href="https://www.facebook.com/LoadedBarrelsBBQ/">
-            <img src={require("../assets/facebook-logo.png")}/>
+            <img src={require("../../assets/facebook-logo.png")}/>
           </a>
           <a className="mediaLink" target="_blank" href="https://www.instagram.com/loadedbarrelsbbq/">
-            <img src={require("../assets/instagram-logo.png")}/>
+            <img src={require("../../assets/instagram-logo.png")}/>
           </a>
           <p className="footer-text">{copyrightText}</p>
 

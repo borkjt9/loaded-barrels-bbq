@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import Header from '../header/header';
+import React from 'react';
+import Header from '../shared/header/header';
 import C2A from '../c2a/c2a';
 import Team from '../team/team';
 import Food from '../food/food';
-import Footer from '../footer/footer';
-import './landing-page.scss';
+import Footer from '../shared/footer/footer';
 import BookNow from '../book-now/book-now';
 
-class LandingPage extends Component {
-  render() {
+import './landing-page.scss';
+
+function LandingPage() {
     return (
       <div className="landing-page">
         <Header />
@@ -19,7 +19,6 @@ class LandingPage extends Component {
         <Footer />
       </div>
     )
-  }
 }
 
 export default LandingPage;

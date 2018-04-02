@@ -1,6 +1,6 @@
 import React from 'react';
 import Scrollchor from 'react-scrollchor';
-import Header from '../header/header';
+import Header from '../shared/header/header';
 import './c2a.scss';
 
 function C2A() {
