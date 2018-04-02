@@ -2,14 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom';
 import './index.scss';
-import App from './App';
+// import App from './App';
+import LandingPage from './landing-page/landing-page';
 import Menu from './menu/menu';
-
+import './styles/spacing.scss';
+import './styles/typography.scss';
+import './styles/base.scss';
+import './styles/component.scss';
 ReactDOM.render(
   <BrowserRouter>
     <div>
       <Switch>
-        <Route path="/home" component={App} />
+        <Route path="/home" component={LandingPage} />
         <Route path="/menu" component={Menu} />
         <Route
           path="/"
