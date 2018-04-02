@@ -7,7 +7,6 @@ import './header.scss';
 const logo = require('../../assets/logo.png');
 
 class Header extends Component {
-  animParams = {offset: -130, duration: 400}
 
   constructor() {
     super();
@@ -34,20 +33,22 @@ class Header extends Component {
     return this.animParams;
   }
   renderMobileHeader() {
+    const animParams = {offset: -170, duration: 400}
+
     return (
       <div className="header">
         <Menu>
-          <Scrollchor to="#the-team" animate={this.animParams}>
+          <Scrollchor to="#the-team" animate={animParams}>
           <a className="header__section-link">
             <h4>THE TEAM</h4>
           </a>
           </Scrollchor>
-          <Scrollchor to="#the-food" animate={this.animParams}>
+          <Scrollchor to="#the-food" animate={animParams}>
           <a className="header__section-link">
             <h4>THE FOOD</h4>
           </a>
           </Scrollchor>
-          <Scrollchor to="#book-now" animate={this.animParams} className="header_c2a">
+          <Scrollchor to="#book-now" animate={animParams} className="header_c2a">
             <a className="header__section-link">
               <h4>BOOK NOW</h4>
             </a>
@@ -60,6 +61,8 @@ class Header extends Component {
     )
   }
   renderWithHashLinks() {
+    const animParams = {offset: -130, duration: 400}
+
 
     return (
       <div className="header">
