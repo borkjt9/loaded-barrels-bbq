@@ -92,3 +92,78 @@
     }
   }
 }
+
+.bm-burger-button {
+  position: fixed;
+  float: left;
+  width: 36px;
+  height: 30px;
+  top: 36px;
+  left: 36px;
+
+  background-image: url('../../assets/menu-options.svg');
+  background-size: 36px;
+  background-repeat: no-repeat;
+}
+
+.bm-menu {
+  background: #721400;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: white;
+}
+
+
+.bm-item-list {
+  a {
+    border-bottom: 1px solid white;
+    :hover {
+      h4 {
+        opacity: .8;
+
+      }
+    }
+    h4 {
+      color: white;
+      line-height: 1em;
+    }
+  }
+  h4 {
+
+  }
+
+  padding: 0.8em;
+}
+
+.mobile-logo {
+  height: 150px;
+  float: left;
+  left: calc(50% - 120px);
+  position: absolute;
+  z-index: 11;
+}
+
+.header__mobile-home-link__border {
+  z-index: 9;
+  background: white;
+  //border: 1px solid #d9d9d9;
+  box-shadow: 0 3.5px 3px #B3B3B3;
+  border-radius: 50%;
+  left: calc(50% - 120px);
+  width: 245px; //logo width;
+  position: absolute;
+  float: left;
+  bottom: 5px;
+  height: 208px;
+  top: -60px //.855 (height / width) - 150 (height of logo)
+}

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Scrollchor from 'react-scrollchor';
+import {slide as Menu} from 'react-burger-menu';
+
 import './header.scss';
 
 const logo = require('../../assets/logo.png');
@@ -7,10 +9,56 @@ const logo = require('../../assets/logo.png');
 class Header extends Component {
   animParams = {offset: -130, duration: 400}
 
+  constructor() {
+    super();
+    this.state = {
+      width: window.innerWidth,
+    };
+  }
+
+  componentWillMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  // make sure to remove the listener
+  // when the component is not mounted anymore
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  handleWindowSizeChange = () => {
+  this.setState({ width: window.innerWidth });
+};
+
   getAnimParams() {
     return this.animParams;
   }
-
+  renderMobileHeader() {
+    return (
+      <div className="header">
+        <Menu>
+          <Scrollchor to="#the-team" animate={this.animParams}>
+          <a className="header__section-link">
+            <h4>THE TEAM</h4>
+          </a>
+          </Scrollchor>
+          <Scrollchor to="#the-food" animate={this.animParams}>
+          <a className="header__section-link">
+            <h4>THE FOOD</h4>
+          </a>
+          </Scrollchor>
+          <Scrollchor to="#book-now" animate={this.animParams} className="header_c2a">
+            <a className="header__section-link">
+              <h4>BOOK NOW</h4>
+            </a>
+          </Scrollchor>
+        </Menu>
+        <img className="mobile-logo" alt="Loaded Barrels BBQ logo" src={logo}/>
+        <div className="header__mobile-home-link__border" />
+        <div className="header__section-wrapper" />
+      </div>
+    )
+  }
   renderWithHashLinks() {
 
     return (
@@ -48,9 +96,13 @@ class Header extends Component {
 
   }
   render() {
+    const { width } = this.state;
+    const isMobile = width <= 750;
+    console.log('width: ', width)
+    // the rest is the same...
     return (
       <div>
-      {this.renderWithHashLinks()}
+      {isMobile ? this.renderMobileHeader(): this.renderWithHashLinks()}
       </div>
     )
   }
