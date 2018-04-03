@@ -1,3 +1,14 @@
+@media(max-width: 767px) {
+  .book-now__contact {
+    display: none;
+  }
+  display: none;
+}
+
+@media(min-width: 768px) {
+
+}
+
 .book-now {
   margin: 40px auto;
   .book-now__contact {
@@ -12,7 +23,6 @@
         letter-spacing: .1em;
         color: #3D3D3D;
         line-height: 1.5em;
-        padding: .2em 1em
       }
 
       .book-now__contact__information-form__section {

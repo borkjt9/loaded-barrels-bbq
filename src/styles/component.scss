@@ -10,7 +10,7 @@
     margin: 40px auto;
   }
   .component__body {
-    width: 95%;
+    width: 90%;
     max-width: 1250px;
     margin: 40px auto;
   }
@@ -20,7 +20,9 @@
     justify-content: space-around;
     position: relative;
     .component__double-col-section__img-group {
-      width: 30vw;
+      max-width: 90%;
+      width: 350px;
+      // height: 338px;
       margin: auto;
 
     .component__double-col-section__img-group__img{
@@ -34,7 +36,8 @@
   }
 
     .component__double-col-section__text-group {
-      width: 30vw;
+      width: 350px;
+      max-width: 90%;
       margin: 0px auto;
       text-align: left;
 
@@ -49,7 +52,8 @@
   }
 
   .component__single-section {
-    width: 80%;
+    width: 90%;
+    max-width: 1000px;
     margin: auto;
     text-align: center;
 

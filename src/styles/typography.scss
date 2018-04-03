@@ -66,8 +66,8 @@ input, text {
   letter-spacing: .1em;
   color: #3D3D3D;
   line-height: 1.5em;
-  padding: .2em 1em
-}
+  padding: .5em 1em;
+  max-width: calc(100% - 2em - 2px);}
 
 
 
@@ -79,7 +79,7 @@ textarea {
   color: #333333;
   line-height: 1.5em;
   padding: .5em 1em;
-
+  max-width: calc(100% - 2em - 2px);
 }
 
 a {

@@ -1,7 +1,14 @@
 .book-now__form {
-  text-align: left;
-  max-width: 800px;
-  width: 30vw;
+  max-width: 90%;
+  width: 350px;
+  h5, button {
+    text-align: left;
+  }
+
+  button {
+    width: 100%;
+  }
+
 
   .book-now__form__loading-wrapper {
     position: relative;

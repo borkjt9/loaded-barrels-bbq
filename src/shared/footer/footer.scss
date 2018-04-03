@@ -1,3 +1,14 @@
+
+@media(max-width: 767px) {
+
+}
+
+@media(min-width: 768px) {
+  .footer-text.is-contact {
+    display: none;
+  }
+
+}
 .footer {
   background-color: #F2F2F2;
   padding-top: 20px;
@@ -14,12 +25,19 @@
   }
 
   .footer-text {
-    font-size: 1rem;
     font-weight: 300;
-    letter-spacing: .1em;
-    text-indent: .1em;
     text-align: center;
+    &.is-contact {
+      font-size: 1rem;
+      letter-spacing: .1em;
+      text-indent: .1em;
 
+    }
+    &.is-copyright {
+      font-size: .8em;
+      letter-spacing: .08em;
+      text-indent: .08em;
+    }
   }
 
 }

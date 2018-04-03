@@ -23,7 +23,7 @@ function BookNow() {
             </a>
           </p>
         </div>
-          <div className="component__double-col-section">
+          <div className="component__double-col-section row-wrap">
             <BookNowForm />
             <div className="book-now__contact">
               <GoogleMapWrapper />
