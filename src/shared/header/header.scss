@@ -42,8 +42,7 @@
   .header__section-links {
     background: white;
     display: flex;
-    max-width: 800px;
-    width: 100%;
+    width: calc(90% - 245px); // logo width is 245px. logo left is 10%.
     justify-content: space-around;
     float: right;
     .header__section-link {
@@ -99,8 +98,8 @@
   float: left;
   width: 36px;
   height: 30px;
-  top: 36px;
-  left: 36px;
+  top: calc(45px - 15px);
+  left: 18px;
 
   background-image: url('../../assets/menu-options.svg');
   background-size: 36px;

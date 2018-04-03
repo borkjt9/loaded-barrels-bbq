@@ -7,14 +7,16 @@
     background-size: 100vw;
     height: calc(.85 * 100vw);//.5469 is the height ratio of the bacgkround img //calc(100vh - 90px); //90 is the height of the header
 
-
+    .c2a__focus__caption {
+      display: none;
+    }
   }
 }
 
 @media(max-width: 1067px) {
 
   .c2a__focus {
-    padding-top: 40px; // logo overlap
+    padding-top: 50px; // logo overlap
     // background-color: rgba(255, 255, 255, 0.9);
     // border-radius: 50%;
 
