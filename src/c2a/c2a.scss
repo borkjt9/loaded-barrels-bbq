@@ -1,9 +1,63 @@
+@media(max-width: 767px) {
+  .c2a {
+    margin-top: 90px;
+    max-height: calc(100vh);
+    background-image: url("../assets/landing-page-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: calc(.85 * 100vw);//.5469 is the height ratio of the bacgkround img //calc(100vh - 90px); //90 is the height of the header
+
+
+  }
+}
+
+@media(max-width: 1067px) {
+
+  .c2a__focus {
+    padding-top: 40px; // logo overlap
+    // background-color: rgba(255, 255, 255, 0.9);
+    // border-radius: 50%;
+
+    h2 {
+      color: white;
+    }
+    p {
+      color: white;
+    }
+    position: relative;
+    width: 90vw;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media(min-width: 768px) {
+  .c2a {
+    height: calc(.5469 * 100vw);//.5469 is the height ratio of the bacgkround img //calc(100vh - 90px); //90 is the height of the header
+    max-height: calc(100vh);
+    background-image: url("../assets/landing-page-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+
+  }
+}
+
+@media(min-width: 1068px) {
+  .c2a__focus {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    position: absolute;
+    float: right;
+    right: 15%;
+    bottom: 7.5%;
+    width: 35vw;
+    height: 35vw;
+  }
+}
+
 .c2a{
-  background-image: url("../assets/landing-page-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  height: calc(.5469 * 100vw);//.5469 is the height ratio of the bacgkround img //calc(100vh - 90px); //90 is the height of the header
-  max-height: calc(100vh);
+
   position: relative;
   .c2a__background-img {
     position: absolute;
@@ -15,14 +69,8 @@
   }
 
   .c2a__focus {
-    width: 30vw;
-    height: 30vw;
-    position: absolute;
-    float: right;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 50%;
-    right: 15%;
-    bottom: 10%;
+
+
     text-align: center;
     .c2a__focus__title, .c2a__focus__caption {
       margin: 5% auto;

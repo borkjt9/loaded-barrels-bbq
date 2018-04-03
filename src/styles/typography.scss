@@ -172,23 +172,20 @@ a {
   h1, h2, h3, h4, h5, a, p {
     text-align: center;
   }
-  h3 {
-    text-indent: 3px;
-  }
   h1 {
-    font-size: 3.0rem;
+    font-size: 2.0rem;
     letter-spacing: .5em;
-    white-space: normal;
-    line-height: 1.3em;
-
-
-  }
-  h2 {
-    font-size: 3.0rem;
-    letter-spacing: .5em;
-    white-space: normal;
     text-indent: .5em;
+    white-space: normal;
+    line-height: 1em;
+  }
 
+  h2 {
+    color: #941A00;
+    font-size: 1.6rem;
+    letter-spacing: .2em;
+    white-space: normal;
+    text-indent: .2em;
   }
 
 }
