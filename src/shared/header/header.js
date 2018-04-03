@@ -12,7 +12,13 @@ class Header extends Component {
     super();
     this.state = {
       width: window.innerWidth,
+      menuOpen: false,
     };
+
+    this.closeMenu = this.closeMenu.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
+    // this.handleStateChange = this.handleStateChange.bind(this);
+
   }
 
   componentWillMount() {
@@ -32,24 +38,44 @@ class Header extends Component {
   getAnimParams() {
     return this.animParams;
   }
+
+
+  // This keeps your state in sync with the opening/closing of the menu
+  // via the default means, e.g. clicking the X, pressing the ESC key etc.
+  // handleStateChange () {
+  //   this.setState({menuOpen: this.state.isOpen})
+  // }
+
+  // This can be used to close the menu, e.g. when a user clicks a menu item
+  closeMenu () {
+    this.setState({menuOpen: false})
+  }
+
+  // This can be used to toggle the menu, e.g. when using a custom icon
+  // Tip: You probably want to hide either/both default icons if using a custom icon
+  // See https://github.com/negomi/react-burger-menu#custom-icons
+  toggleMenu () {
+    this.setState({menuOpen: !this.state.menuOpen})
+  }
+
   renderMobileHeader() {
     const animParams = {offset: -170, duration: 400}
-
+    const {menuOpen} = this.state;
     return (
       <div className="header">
-        <Menu>
+        <Menu isOpen={menuOpen}>
           <Scrollchor to="#the-team" animate={animParams}>
-          <a className="header__section-link">
+          <a onClick={this.closeMenu} className="header__section-link">
             <h4>THE TEAM</h4>
           </a>
           </Scrollchor>
           <Scrollchor to="#the-food" animate={animParams}>
-          <a className="header__section-link">
+          <a onClick={this.closeMenu} className="header__section-link">
             <h4>THE FOOD</h4>
           </a>
           </Scrollchor>
           <Scrollchor to="#book-now" animate={animParams} className="header_c2a">
-            <a className="header__section-link">
+            <a onClick={this.closeMenu} className="header__section-link">
               <h4>BOOK NOW</h4>
             </a>
           </Scrollchor>
