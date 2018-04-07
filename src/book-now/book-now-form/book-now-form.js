@@ -49,7 +49,7 @@ class BookNowForm extends Component {
           return null
         }
 
-        this.formattedDate = this.formatDate(newVal);
+        this.formattedDate = formatDate(newVal);
       }
       state[field] = newVal;
       state.validationErrors = run(state, fieldValidations);

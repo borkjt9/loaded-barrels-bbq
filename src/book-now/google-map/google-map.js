@@ -3,12 +3,11 @@ import React , {Component} from 'react';
 import {compose, withProps} from 'recompose';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 import { InfoBox } from "react-google-maps/lib/components/addons/InfoBox";
-
+import __GOOGLE_KEY__ from './google-keys';
 import { MarkerWithLabel } from "react-google-maps/lib/components/addons/MarkerWithLabel";
 
 import './google-map.scss';
 
-const __GOOGLE_KEY__ = 'AIzaSyCUBXD3LEXPdDjzwYgLFU-W5U-KaotcX_0';
 // const MARKER_SIZE = 40;
 // const greatPlaceStyle = {
 //   position: 'absolute',

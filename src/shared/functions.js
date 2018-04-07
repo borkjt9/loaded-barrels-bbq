@@ -1,4 +1,4 @@
-export function formatDate(rawDate) {
+export default function formatDate(rawDate) {
   if (rawDate.length < 3) {
     return rawDate
   } else if (rawDate.length < 5) {
