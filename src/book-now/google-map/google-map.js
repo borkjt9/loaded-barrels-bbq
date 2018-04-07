@@ -3,7 +3,7 @@ import React , {Component} from 'react';
 import {compose, withProps} from 'recompose';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 import { InfoBox } from "react-google-maps/lib/components/addons/InfoBox";
-import __GOOGLE_KEY__ from './google-keys';
+// import __GOOGLE_KEY__ from './google-keys';
 import { MarkerWithLabel } from "react-google-maps/lib/components/addons/MarkerWithLabel";
 
 import './google-map.scss';
@@ -20,6 +20,7 @@ import './google-map.scss';
 //   lat: 40.8197023,
 //   lng: -74.48363269999999
 // }
+const __GOOGLE_KEY__ = 'AIzaSyCUBXD3LEXPdDjzwYgLFU-W5U-KaotcX_0';
 
 const GoogleMapWrapper = compose(
   withProps({
