@@ -9,22 +9,22 @@ function Team() {
       'sections': [
         {
           'imgGroup': {
-            'caption': 'Pitmaster Mike smoking wings for the Seaside Heights Polar Plunge',
+            'desc': 'Pitmaster Mike smoking wings for the Seaside Heights Polar Plunge',
             'url': '../assets/team-photo.jpg'
           },
           'textGroup': {
             'title': 'Where it all began',
-            'desc': 'A few years ago Mike was a New Jersey detective who liked to smoke BBQ for friends on weekends.\n\nWhile Mike is still a New Jersey detective who smokes BBQ for friends on weekends, his number of friends seems to have gotten a lot larger.'
+            'desc': 'Back in their wilder days, Mike and his buddies would rent a beach house in Manasquan, NJ for the Summer. While their days were spent on the beach, nights were spent cooking up BBQ on “Pebble Beach”, aka their backyard.\n\nMost days Mike would man the grill. One day he let one of his friends give it a shot. It did not go well.\n\nMike swore he would never make that mistake again.'
           }
         },
         {
           'imgGroup': {
-            'caption': 'Loaded Barrels\' setup at our very first competion. We have come a long way.',
+            'desc': 'Loaded Barrels\' setup at our very first competion. Wide eyes and full hearts.',
             'url': '../assets/polar-plunge.jpg'
           },
           'textGroup': {
-            'title': 'Family First',
-            'desc': 'Loaded Barrels is first-and-foremost a family-run business. At events you will see Mike and his brother John working hand-in hand. While Mike mans the smoker John prepares the fixins.\n\nBBQ just seems to taste better when family is involved.'
+            'title': 'Battle Tested',
+            'desc': 'Since those \'Pebble Beach\' days, Loaded Barrels BBQ has come a long way. We are now a competition BBQ team and full-service Catering Company to serve the greater New Jersey area.\n\nFrom our in-house, slow smoked pork ribs and chicken pops, to all of our homemade sides, Loaded Barrels BBQ has dedicated itself to providing the best BBQ in the business.'
           }
         }
       ]

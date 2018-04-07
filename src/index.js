@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom';
 import './index.scss';
-// import App from './App';
 import LandingPage from './landing-page/landing-page';
 import Menu from './menu/menu';
 import './styles/spacing.scss';
