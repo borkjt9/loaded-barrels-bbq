@@ -110,6 +110,9 @@ class Header extends Component {
               <h4>THE FOOD</h4>
             </a>
             </Scrollchor>
+            <a className="header__section-link" href="https://www.redbubble.com/people/loadedbarrels?asc=u">
+              <h4>THE MERCH</h4>
+            </a>
             <button>
               <Scrollchor to="#book-now" animate={this.animParams} className="header_c2a">
                 <h4>BOOK NOW</h4>
